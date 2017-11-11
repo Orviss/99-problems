@@ -40,18 +40,4 @@ public class P07Test {
         assertThat(flatten, hasItems("a", "b", "c", "d", "e"));
     }
 
-    @Test
-    public void shouldFlattenAListOfList_stream() throws Exception {
-        List<String> flatten = P07.flatten_stream(asList("a", asList("b", asList("c", "d")), "e"), String.class);
-        assertThat(flatten, hasSize(5));
-        assertThat(flatten, hasItems("a", "b", "c", "d", "e"));
-    }
-
-    @Test
-    public void shouldFlattenDeepNestedLists_stream() throws Exception {
-        List<String> flatten = P07.flatten_stream(asList("a", asList("b", asList("c", asList("d", "e", asList("f", "g"))), "h")), String.class);
-        assertThat(flatten, hasSize(8));
-        assertThat(flatten, hasItems("a", "b", "c", "d", "e", "f", "g", "h"));
-
-    }
 }

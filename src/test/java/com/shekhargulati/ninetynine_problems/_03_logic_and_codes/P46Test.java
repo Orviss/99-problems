@@ -2,8 +2,6 @@ package com.shekhargulati.ninetynine_problems._03_logic_and_codes;
 
 import org.junit.Test;
 
-import static com.shekhargulati.ninetynine_problems._03_logic_and_codes.P46.and;
-import static com.shekhargulati.ninetynine_problems._03_logic_and_codes.P46.or;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -22,4 +20,13 @@ public class P46Test {
 
         assertThat(table, is(equalTo(result)));
     }
+
+    public static boolean and(boolean a, boolean b) {
+        return a && b;
+    }
+
+    public static boolean or(boolean a, boolean b) {
+        return a || b;
+    }
+
 }

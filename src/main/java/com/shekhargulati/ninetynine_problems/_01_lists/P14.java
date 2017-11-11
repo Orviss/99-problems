@@ -9,12 +9,12 @@ import static java.util.stream.Collectors.toList;
 /**
  * (*) Duplicate the elements of a list
  * <pre>
- *          duplicate(Arrays.asList("a", "b", "c", "d"))
+ *          duplicate(("a", "b", "c", "d")) = ("a", "a", "b", "b", "c", "c", "d", "d")
  * </pre>
  */
 public class P14 {
 
     public static <T> List<T> duplicate(List<T> list) {
-        return list.stream().flatMap(e -> Stream.of(e, e)).collect(toList());
+        throw new UnsupportedOperationException();
     }
 }

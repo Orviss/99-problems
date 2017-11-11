@@ -28,9 +28,4 @@ public class P02Test {
         P02.secondLast(Arrays.asList(1));
     }
 
-    @Test
-    public void shouldFindSecondLastElementFromALinkedList() throws Exception {
-        LinkedList<Integer> numbers = linkedList(1, 2, 11, 4, 5, 8, 10, 6);
-        assertThat(P02.secondLastRecursion(numbers), is(equalTo(10)));
-    }
 }

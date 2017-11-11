@@ -5,4 +5,7 @@ package com.shekhargulati.ninetynine_problems._02_arithmetic;
  * Check P41Test
  */
 public class P41 {
+
+    // skip
+
 }

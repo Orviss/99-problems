@@ -1,9 +1,6 @@
 package com.shekhargulati.ninetynine_problems._02_arithmetic;
 
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.stream.IntStream;
 
 /**
  * (**) Goldbach's conjecture
@@ -16,19 +13,7 @@ import java.util.stream.IntStream;
 public class P35 {
 
     public static List<Integer> goldbach(int number) {
-        if (number == 2) {
-            return Collections.emptyList();
-        } else if (number % 2 != 0) {
-            return Collections.emptyList();
-        }
-
-        List<Integer> primeNumbers = P34.primeNumbers(IntStream.rangeClosed(2, number));
-        for (Integer primeNumber : primeNumbers) {
-            if (primeNumbers.contains(number - primeNumber)) {
-                return Arrays.asList(primeNumber, number - primeNumber);
-            }
-        }
-        throw new RuntimeException("Should not have happened!!");
+        throw new UnsupportedOperationException();
     }
 
 }

@@ -19,15 +19,4 @@ public class P03Test {
         assertThat(P03.kth(numbers, 2), is(equalTo(3)));
     }
 
-    @Test
-    public void shouldFindKthElementFromAListRecursive() throws Exception {
-        LinkedList<Integer> numbers = linkedList(1, 2, 3, 4, 5);
-        assertThat(P03.kthRecursive(numbers, 2), is(equalTo(3)));
-    }
-
-    @Test
-    public void shouldFindKthElementFromAList_LinkedListAndStream() throws Exception {
-        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
-        assertThat(P03.kthStream(numbers, 2), is(equalTo(3)));
-    }
 }

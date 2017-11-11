@@ -8,6 +8,6 @@ import java.util.List;
 public class P25 {
 
     public static <T> List<T> randomPermutation(List<T> list) {
-        return P23.randomSelectR(list, list.size());
+        throw new UnsupportedOperationException();
     }
 }

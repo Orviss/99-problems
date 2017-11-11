@@ -19,15 +19,4 @@ public class P05Test {
         assertThat(P05.reverse(numbers), is(equalTo(Arrays.asList(5, 4, 3, 2, 1))));
     }
 
-    @Test
-    public void shouldReverseAList_IntStream() throws Exception {
-        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
-        assertThat(P05.reverse_IntStream(numbers), is(equalTo(Arrays.asList(5, 4, 3, 2, 1))));
-    }
-
-    @Test
-    public void shouldReverseAList_Stream() throws Exception {
-        ArrayDeque<Integer> numbers = arrayDeque(1, 2, 3, 4, 5);
-        assertThat(P05.reverse_customStream(numbers), is(equalTo(Arrays.asList(5, 4, 3, 2, 1))));
-    }
 }

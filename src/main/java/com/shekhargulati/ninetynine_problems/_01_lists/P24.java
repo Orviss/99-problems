@@ -8,6 +8,6 @@ import java.util.List;
 public class P24 {
 
     public static List<Integer> randomSelect(int n, int start, int end) {
-        return P23.randomSelect(P22.range(start, end), n);
+        throw new UnsupportedOperationException();
     }
 }

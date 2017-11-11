@@ -8,6 +8,6 @@ import java.util.List;
 public class P18 {
 
     public static <T> List<T> slice(List<T> list, int start, int end) {
-        return list.subList(start - 1, end);
+        throw new UnsupportedOperationException();
     }
 }

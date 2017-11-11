@@ -22,14 +22,4 @@ public class P04Test {
         assertThat(P04.length(Arrays.asList(1, 2, 3, 4, 5)), is(equalTo(5)));
     }
 
-    @Test
-    public void listOfEmptyListShouldBe0_Recursive() throws Exception {
-        int length = P04.lengthRecursive(Collections.emptyList());
-        assertThat(length, is(equalTo(0)));
-    }
-
-    @Test
-    public void shouldFindListOfNonEmptyList_Recursive() throws Exception {
-        assertThat(P04.lengthRecursive(Arrays.asList(1, 2, 3, 4, 5)), is(equalTo(5)));
-    }
 }

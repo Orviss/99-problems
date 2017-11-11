@@ -1,10 +1,6 @@
 package com.shekhargulati.ninetynine_problems._03_logic_and_codes;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.function.BiPredicate;
-import java.util.stream.Collectors;
 
 /**
  * 3.01 (**) Truth tables for logical expressions.
@@ -17,21 +13,7 @@ import java.util.stream.Collectors;
 public class P46 {
 
     public static String table(BiPredicate<Boolean, Boolean> f) {
-        List<String> resultBuilder = new ArrayList<>();
-        resultBuilder.add("A          B          result");
-        for (boolean a : Arrays.asList(true, false)) {
-            for (boolean b : Arrays.asList(true, false)) {
-                resultBuilder.add(String.format("%-10s %-10s %s", a, b, f.test(a, b)));
-            }
-        }
-        return resultBuilder.stream().collect(Collectors.joining("\n"));
+        throw new UnsupportedOperationException();
     }
 
-    public static boolean and(boolean a, boolean b) {
-        return a && b;
-    }
-
-    public static boolean or(boolean a, boolean b) {
-        return a || b;
-    }
 }

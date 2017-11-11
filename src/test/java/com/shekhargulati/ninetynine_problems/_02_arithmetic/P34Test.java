@@ -25,17 +25,4 @@ public class P34Test {
         assertThat(primeNumbers, hasItems(7, 11, 13, 17, 19, 23, 29, 31));
     }
 
-    @Test
-    public void shouldGiveAllPrimeNumbersBetween2And10_sieve() throws Exception {
-        List<Integer> primeNumbers = P34.primeNumbers_sieve(2, 10);
-        assertThat(primeNumbers, hasSize(4));
-        assertThat(primeNumbers, hasItems(2, 3, 5, 7));
-    }
-
-    @Test
-    public void shouldGiveAllPrimeNumbersBetween7And31_sieve() throws Exception {
-        List<Integer> primeNumbers = P34.primeNumbers_sieve(7, 31);
-        assertThat(primeNumbers, hasSize(8));
-        assertThat(primeNumbers, hasItems(7, 11, 13, 17, 19, 23, 29, 31));
-    }
 }

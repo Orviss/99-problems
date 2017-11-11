@@ -7,22 +7,13 @@ import java.util.Objects;
 
 /**
  * <b>(**) Run-length encoding of a list (direct solution)</b>
+ *
+ * As P10 only do not use P09.
  */
 public class P13 {
 
     public static List<SimpleEntry<Integer, String>> encode_direct(List<String> list) {
-        LinkedList<SimpleEntry<Integer, String>> result = new LinkedList<>();
-        String lastElem = null;
-        for (String elem : list) {
-            if (Objects.equals(lastElem, elem)) {
-                SimpleEntry<Integer, String> last = result.removeLast();
-                result.add(new SimpleEntry<>(last.getKey() + 1, elem));
-            } else {
-                result.add(new SimpleEntry<>(1, elem));
-                lastElem = elem;
-            }
-        }
-        return result;
+        throw new UnsupportedOperationException();
     }
 
 }

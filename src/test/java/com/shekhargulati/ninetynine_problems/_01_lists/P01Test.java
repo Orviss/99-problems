@@ -23,10 +23,4 @@ public class P01Test {
         assertThat(P01.last(alphabets), is(equalTo("d")));
     }
 
-    @Test
-    public void shouldFindLastElementFromAListOfAlphabetsUsingRecursion() throws Exception {
-        assertThat(P01.lastRecursive(asList("a", "b", "c", "d")), is(equalTo("d")));
-    }
-
-
 }

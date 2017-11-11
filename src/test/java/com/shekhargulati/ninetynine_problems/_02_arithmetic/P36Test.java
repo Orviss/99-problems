@@ -27,15 +27,4 @@ public class P36Test {
         ));
     }
 
-    @Test
-    public void shouldProduceAListOfGoldbachCompositionsWhereBothPrimeNumbersAreGreaterThan50() throws Exception {
-        List<SimpleEntry<Integer, List<Integer>>> compositions = P36.goldbach_list1(IntStream.rangeClosed(1, 2000), 50);
-        assertThat(compositions, hasSize(4));
-        assertThat(compositions, hasItems(
-                new SimpleEntry<>(992, Arrays.asList(73, 919)),
-                new SimpleEntry<>(1382, Arrays.asList(61, 1321)),
-                new SimpleEntry<>(1856, Arrays.asList(67, 1789)),
-                new SimpleEntry<>(1928, Arrays.asList(61, 1867))
-        ));
-    }
 }

@@ -6,6 +6,6 @@ package com.shekhargulati.ninetynine_problems._02_arithmetic;
 public class P38 {
 
     public static boolean coprime(int first, int second) {
-        return P37.gcd(first, second) == 1;
+        throw new UnsupportedOperationException();
     }
 }
